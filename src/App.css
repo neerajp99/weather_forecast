@@ -7,21 +7,207 @@ body {
   width: 100%;
   overflow-x: hidden;
 
-  background-image: url(img/weather3.jpg);
   background-repeat: no-repeat;
-  position: fixed;
 }
 .left {
   height: 100%;
   width: 33%;
-  position: absolute;
+  position: fixed;
   float: left;
+  background-image: url(img/weather3.jpg);
 }
 .right {
-  height: 100%;
+  min-height: 100%;
   width: 67%;
   right: 0;
   background: #ffbe76;
   position: absolute;
   background-image: url(img/lines.svg);
+}
+
+.weather_navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #605e8c;
+}
+
+.weather_header {
+  background-color: #605e8c;
+  height: 90px;
+  color: #fff;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.weather_heading {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2.5%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.weather_form_city_input,
+.weather_form_country_input {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  height: 60px;
+  width: 22%;
+  border-bottom: 2px solid #605e8c;
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.1vw;
+  letter-spacing: 0.2em;
+  margin-top: 4%;
+  color: #605e8c;
+}
+
+.weather_form_city_input:focus,
+.weather_form_country_input:focus {
+  border-bottom: 5px solid #605e8c;
+  -webkit-transition: 0.2s all ease;
+  -o-mozkit-transition: 0.2s all ease;
+  transition: 0.2 s all ease;
+}
+
+.weather_form_button {
+  margin-top: 1%;
+  height: 60px;
+  width: 180px;
+  border: 2px solid #605e8c;
+  background-color: transparent;
+  color: #605e8c;
+  font-size: 1.1vw;
+  font-weight: 400;
+  outline: none;
+  margin-top: 2%;
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2 s all ease-in-out;
+}
+
+.weather_form_button:hover {
+  background: #605e8c;
+  color: #fff;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2 s all ease-in-out;
+}
+.comma {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #605e8c;
+}
+
+.weather_details {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10%;
+}
+.weather_basic_deatils_list {
+  font-size: 1.5vw;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding-bottom: 10%;
+  padding-top: 7%;
+  border-bottom: 2px dashed #605e8c;
+  border-top: 2px dashed #605e8c;
+}
+.weather_basic_deatils_list_item {
+  list-style-type: none;
+  margin-top: 2%;
+  text-align: center;
+  list-style-type: none;
+  color: #8a8686;
+}
+
+.weather_basic_deatils_list_item > span {
+  font-weight: 400;
+  color: #605e8c;
+}
+.weather_details_button {
+  height: 100px;
+  width: 100px;
+  margin-left: 5%;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 6%;
+  border: 2px solid #605e8c;
+  background: transparent;
+  font-size: 1em;
+  font-weight: 700;
+  color: #605e8c;
+  position: relative;
+  outline: none;
+}
+.weather_details_buttons {
+  padding-bottom: 3%;
+  border-bottom: 2px dashed #605e8c;
+  width: 100%;
+  position: relative;
+}
+.weather_details_button:hover{
+  background: #605e8c;
+  color: #fff;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2 s all ease-in-out;
+  outline: none;
+}
+
+
+.weather_details_now {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10%;
+}
+.weather_details_now_list {
+  font-size: 1.5vw;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding-bottom: 10%;
+  padding-top: 7%;
+  border-bottom: 2px dashed #605e8c;
+
+}
+.weather_details_now_list_item {
+  list-style-type: none;
+  margin-top: 2%;
+  text-align: left;
+  list-style-type: none;
+  color: #8a8686;
+}
+
+.weather_details_now_list_item > span {
+  font-weight: 400;
+  color: #605e8c;
+}
+.weather_date{
+  font-size: 2vw;
+  color: #8a8686;
+
+}
+.weather_date>span{
+  color: #605e8c;
+}
+
+.weather_time{
+  color: #605e8c;
+}
+.weather_time>span{
+  color: #8a8686;
+}
+.weather_error{
+  font-size: 1.5vw;
+  color: #605e8c;
 }
